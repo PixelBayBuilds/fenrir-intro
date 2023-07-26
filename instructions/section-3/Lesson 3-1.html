@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <!-- Font Awesome 5.15.1 CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
 </head>
 <body>
-    <nav></nav>
-    <header class="header"></header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+    </nav>
+    <header class="header">
+        <h1>Nice to Meet You!</h1>
+        <p>Get to know me and my work.</p>
+        <button>My Work</button>      
+    </header>
     <main class="main">
         <section class="about">
             <h2>About me</h2>
@@ -24,8 +33,18 @@
         <section class="Connect">
             <h2>Connect</h2>
             <p> Don't be a stranger. Feel free to connect!</p>
-            <a href="www.linkedin.com/in/rebecca-lormeus-752060194">LinkedIn</a>
-            <a href="https://github.com/PixelBayBuilds">Github</a>
+            <div class="wrapper">
+            <a href="www.linkedin.com/in/rebecca-lormeus-752060194" class="icon github">
+                <div class="tooltip">LinkedIn</div>
+                <span><i class="fab fa-linkedin"></i></span></a>
+            
+            <a href="https://github.com/PixelBayBuilds" class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span></a>
+        </div>
         </section>
+        <footer>
+            <h4>Copyright 2023</h4>
+        </footer>
 </body>
 </html>
