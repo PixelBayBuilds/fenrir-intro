@@ -48,6 +48,25 @@
                 <span><i class="fab fa-github"></i></span></a>
         </div>
         </section>
+        <section>
+            <h2>Leave a Message
+            </h2>
+            <form name="leave_message" method="get">
+                <label for="usersName">Name</label>
+                <input type="text" id="usersName" name="usersName" required = "true"><br><br>
+                <label for = "usersEmail">Email</label>
+                <input type="text" id="usersEmail" name="usersEmail" required = "true"><br><br>
+                <label for="usersMessage">Enter your message</label>
+                <textarea id="usersMessage" name="usersMessage" required="true">
+                </textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+        <section id="messages">
+        <h2>Messages
+        </h2>
+    <ul></ul>   
+        </section>
         <footer>
         </footer>
         <script src="index.js">
