@@ -1,0 +1,144 @@
+/* Default styles for all devices */
+
+/* Tablet styles (768px and below) */
+@media (max-width: 768px) {
+    /* Add styles specific to tablet devices */
+    body {
+        font-size: 14px;
+    }
+    /* Adjust other styles as needed */
+}
+
+/* Mobile styles (576px and below) */
+@media (max-width: 576px) {
+    /* Add styles specific to mobile devices */
+    body {
+        font-size: 12px;
+    }
+    /* Adjust other styles as needed */
+}
+
+
+
+
+/* Changes to body*/
+body{
+font-family:"Poppins", sans-serif;
+color: #6039C0;
+background-color: #dcd3f5;
+}
+
+/* All headings*/
+h1,
+h2{
+    font-size: 2em;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+/*Padding for sections*/
+#about {
+    padding: 25px 50px;
+}
+.Experience{
+    padding: 25px 50px;
+    background-color: #ed4672;
+}
+#skills{
+    padding: 25px 50px;
+    background-color: #a8d2df;
+
+}
+#Connect{
+    padding: 25px 50px;
+}
+section{
+    padding: 25px 50px;
+}
+
+.Experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Experience li {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fc99b3;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#skills ul{
+    list-style: none;
+    padding: 0; 
+}
+
+#skills li{
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #8979B3;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Style for input fields and text areas */
+form label{
+    color: #8979B3;
+    font-size: 1em;
+}
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Style for the submit button */
+form .btn {
+    background-color: #8979B3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form .btn:hover {
+    background-color: #FFDAC5;
+    color: #020101;
+}
+
+/*messages*/
+#messages ul{
+    list-style: none;
+    padding: 0;
+}
+
+#messages li{
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #a8d2df;
+    color: #ffffff;
+    border-radius: 10px  
+}
+
+.remove-button{
+    background-color: #8979B3;
+    color: #fff;  
+}
+
+.remove-button:hover {
+    background-color: #FFDAC5;
+    color: #020101;
+}
+
+footer{
+    background-color: #8979B3;   
+    padding: 25px 25px;
+}
