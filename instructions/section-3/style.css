@@ -1,4 +1,11 @@
-/* Default styles for all devices */
+/* Desktop styles (992px and above) */
+@media (min-width: 992px) {
+    /* Desktop-specific styles */
+    body {
+        font-size: 16px; /* Larger font size for desktop */
+    }
+
+}
 
 /* Tablet styles (768px and below) */
 @media (max-width: 768px) {
@@ -6,7 +13,7 @@
     body {
         font-size: 14px;
     }
-    /* Adjust other styles as needed */
+
 }
 
 /* Mobile styles (576px and below) */
@@ -19,7 +26,25 @@
 }
 
 
+/*navigation*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+}
 
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header{
+    padding: 25px 25px;
+    margin: 50px;
+}
 
 /* Changes to body*/
 body{
@@ -36,6 +61,17 @@ h2{
     color: rgb(255, 255, 255);
 }
 
+.experience-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.message-container{
+    display: flex;
+}
+
+
 /*Padding for sections*/
 #about {
     padding: 25px 50px;
@@ -43,7 +79,11 @@ h2{
 .Experience{
     padding: 25px 50px;
     background-color: #ed4672;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 #skills{
     padding: 25px 50px;
     background-color: #a8d2df;
@@ -80,6 +120,11 @@ section{
     background-color: #8979B3;
     color: #ffffff;
     border-radius: 10px;
+}
+
+.message-form{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Style for input fields and text areas */
