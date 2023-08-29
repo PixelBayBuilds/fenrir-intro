@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becca's Portfolio</title>
+    <!-- Font Awesome 5.15.1 CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#">Experience</a>
+        <a href="#">Skills</a>
+    </nav>
+    <header class="header">
+        <h1>Nice to Meet You!</h1>
+        <p>Get to know me and my work.</p>
+        <button>My Work</button>      
+    </header>
+    <main class="main">
+        <section class="about">
+            <h2>About me</h2>
+            <p>Hi there i'm Becca! I'm a digital designer and front end developer based out of South Philly. I'm passionate about user experience and aim to provide the best experience possible. </p>
+        </section>
+        <div class="experience-container">
+        <section class="Experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>Digital Designer at Mobile Outfitters Oct 2020 - Current</li>
+                <li>Graphic Designer at West Chester University Sep 2020 - May 2021</li>
+                <li>Illustrator at West Chester University Sep 2018 - May 2021</li>
+            </ul>
+        </section>
+    </div>
+        <section id="skills">
+            <h2>Skills
+            </h2>
+            <ul></ul>
+        </section>
+        <section class="Connect">
+            <h2>Connect</h2>
+            <p> Don't be a stranger. Feel free to connect!</p>
+            <div class="wrapper">
+            <a href="www.linkedin.com/in/rebecca-lormeus-752060194" class="icon github">
+                <div class="tooltip">LinkedIn</div>
+                <span><i class="fab fa-linkedin"></i></span></a>
+            
+            <a href="https://github.com/PixelBayBuilds" class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span></a>
+        </div>
+        </section>
+        <div class="message-container">
+        <section class="message-form">
+            <h2>Leave a Message
+            </h2>
+            <form name="leave_message" method="get">
+                <label for="usersName">Name</label>
+                <input type="text" id="usersName" name="usersName" required = "true"><br><br>
+                <label for = "usersEmail">Email</label>
+                <input type="text" id="usersEmail" name="usersEmail" required = "true"><br><br>
+                <label for="usersMessage">Enter your message</label>
+                <textarea id="usersMessage" name="usersMessage" required="true">
+                </textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </div>
+        <section id="messages">
+        <h2>Messages
+        </h2>
+    <ul></ul>   
+        </section>
+        <footer>
+        </footer>
+        <script src="index.js">
+
+        </script>
+</body>
+</html>
