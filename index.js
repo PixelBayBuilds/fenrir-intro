@@ -50,25 +50,34 @@ messageForm.addEventListener("submit",function(event){
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 });
-var repositories;
-var githubRequest = new XMLHttpRequest();
-githubRequest.open('GET','https://api.github.com/users/PixelBayBuilds/repos');
-githubRequest.onload = function() {
-    repositories = JSON.parse(githubRequest.responseText);
+
+let repositories;
+
+fetch('https://api.github.com/users/PixelBayBuilds/repos')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    repositories = data;
     console.log(repositories);
     renderProjects();
-    
-};
-githubRequest.send();
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
-var projectSection = document.getElementById('projects');
-var projectList = projectSection.querySelector('ul');
+let projectSection = document.getElementById('projects');
+let projectList = projectSection.querySelector('ul');
 
 function renderProjects() {
-    for (var i = 0; i < repositories.length; i++) {
-         var project = document.createElement("li");
-         project.innerText = repositories[i].name;
-         projectList.appendChild(project);
-    }
+  for (let i = 0; i < repositories.length; i++) {
+    var project = document.createElement("li");
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+  }
 }
+
 
