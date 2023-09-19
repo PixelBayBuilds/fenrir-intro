@@ -74,8 +74,13 @@ let projectList = projectSection.querySelector('ul');
 
 function renderProjects() {
   for (let i = 0; i < repositories.length; i++) {
-    var project = document.createElement("li");
+    let project = document.createElement("li");
+    let projectLink = document.createElement("a");
+
     project.innerText = repositories[i].name;
+    projectLink.href = repositories[i].html_url;
+    projectLink.target = "_blank";
+    project.appendChild(projectLink);
     projectList.appendChild(project);
   }
 }
