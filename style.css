@@ -27,12 +27,29 @@
 
 
 /*navigation*/
-nav{
-    position: fixed;
-    top: 0;
+.navigation{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    background-color: #ffffff;
-    padding: 20px;
+    overflow: hidden;
+    background-color: #4cb2be;
+}
+.navigation li{
+    float: right;
+}
+li a{
+    color: #ffffff;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.name{
+    color: #213e60;
+
 }
 
 /* Style for the dropdown container */
@@ -49,8 +66,8 @@ nav{
 /* Changes to body*/
 body{
 font-family:"Poppins", sans-serif;
-color: #6039C0;
-background-color: #dcd3f5;
+color: #333a47;
+background-color: #f4f2ef;
 }
 
 /* All headings*/
@@ -58,7 +75,7 @@ h1,
 h2{
     font-size: 2em;
     font-weight: 500;
-    color: rgb(255, 255, 255);
+    color: #213e60;
 }
 
 .experience-container{
@@ -78,7 +95,7 @@ h2{
 }
 .Experience{
     padding: 25px 50px;
-    background-color: #ed4672;
+    background-color: #e68c3a;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -86,14 +103,27 @@ h2{
 
 #skills{
     padding: 25px 50px;
-    background-color: #a8d2df;
+    background-color: #4cb2be;
 
 }
 #Connect{
     padding: 25px 50px;
 }
+
+.tooltip{
+    color: #bb3b17;
+}
+
+.fa-brands{
+    color: #4cb2be;
+}
+
 section{
     padding: 25px 50px;
+}
+
+.experience-header{
+    color: #ffffff;
 }
 
 .Experience ul {
@@ -104,11 +134,14 @@ section{
 .Experience li {
     margin: 10px 0;
     padding: 15px;
-    background-color: #fc99b3;
+    background-color: #bb3b17;
     color: #ffffff;
     border-radius: 10px;
 }
 
+.skills-header{
+    color: #ffffff;
+}
 #skills ul{
     list-style: none;
     padding: 0; 
@@ -117,7 +150,7 @@ section{
 #skills li{
     margin: 10px 0;
     padding: 15px;
-    background-color: #8979B3;
+    background-color: #213e60;
     color: #ffffff;
     border-radius: 10px;
 }
@@ -129,7 +162,7 @@ section{
 
 /* Style for input fields and text areas */
 form label{
-    color: #8979B3;
+    color: #bb3b17;
     font-size: 1em;
 }
 form input[type="text"],
@@ -145,7 +178,7 @@ form textarea {
 
 /* Style for the submit button */
 form .btn {
-    background-color: #8979B3;
+    background-color: #bb3b17;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -184,6 +217,6 @@ form .btn:hover {
 }
 
 footer{
-    background-color: #8979B3;   
+    background-color: #4cb2be;   
     padding: 25px 25px;
 }
